@@ -23,19 +23,24 @@ const BasicsOfMotion = () => {
           <motion.div
             initial={{
               rotate: "0deg",
-              scale: 1,
+              x: 0,
+              opacity: 0,
+              scale: 0,
             }}
             animate={{
               rotate: "270deg",
+              scale: 1,
+              x: [-100, 0, 100, 0, -100, 0, 0, 100, 0, -100, 0,0, 100, 0, -100, 0,0, 100, 0, -100, 0],
+              opacity: 1,
             }}
             transition={{
               duration: 1,
-              scale: 1,
               ease: backInOut,
             }}
             exit={{
               rotate: "0deg",
               scale: 0,
+              x:0,
             }}
             className="box h-72 w-72 bg-amber-900"
           ></motion.div>
