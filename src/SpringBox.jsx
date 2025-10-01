@@ -9,10 +9,10 @@ export default function SpringBox() {
       className="example-container"
     >
       <motion.div className="box" data-state={state}
-       animate={{ x: state? 100 : 0 }}
+       animate={{ x: state? -100 : 0 }}
       transition={{ type: "spring", stiffness: 100, damping: 10 }}
       ></motion.div>
-      <button onClick={() => setState(!state)}>Toggle State</button>
+      <button className='bg-blue-500 text-red-950 p-2 rounded hover:bg-amber-400' onClick={() => setState(!state)}>Toggle State</button>
     </div>
   );
 }
