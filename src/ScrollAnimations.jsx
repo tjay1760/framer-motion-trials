@@ -1,16 +1,18 @@
 import React from 'react'
-import { motion, useScroll, useSpring } from 'motion/react'
+import { motion, useScroll, useSpring, useTransform } from 'motion/react'
 
 const ScrollAnimations = () => {
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress)
+  const background = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], ['#fbbf24','#f97316','#f59e0b',"#f43f5e", '#f59e0b'])
 
   return (
     <div className='space-y-5 text-2xl'>
 
-      <motion.h1 className='text-4xl font-bold bg-amber-600 w-full sticky top-0 '
+      <motion.h1 className='text-4xl font-bold w-full sticky top-0 '
       style={{
         scaleX: scaleX,
+        background: background,
         transformOrigin: 'left',
       }}
       >Scroll Animations</motion.h1>
