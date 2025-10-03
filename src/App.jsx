@@ -5,6 +5,7 @@ import SpringBox from './SpringBox'
 import BasicsOfMotion from './BasicsOfMotion'
 import Guestures from './Guestures'
 import AnimationControls from './AnimationControls'
+import ViewBasedTransitions from './ViewBasedTrasitions'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       {/* <BasicsOfMotion /> */}
       {/* <Guestures /> */}
       <AnimationControls />
+      <ViewBasedTransitions />
     </div>
   )
 }
