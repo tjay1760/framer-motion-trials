@@ -6,6 +6,7 @@ import BasicsOfMotion from './BasicsOfMotion'
 import Guestures from './Guestures'
 import AnimationControls from './AnimationControls'
 import ViewBasedTransitions from './ViewBasedTrasitions'
+import ScrollAnimations from './ScrollAnimations'
 
 function App() {
   
@@ -16,7 +17,8 @@ function App() {
       {/* <BasicsOfMotion /> */}
       {/* <Guestures /> */}
       {/* <AnimationControls /> */}
-      <ViewBasedTransitions />
+      {/* <ViewBasedTransitions /> */}
+      <ScrollAnimations />
     </div>
   )
 }
