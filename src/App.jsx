@@ -4,6 +4,7 @@ import './App.css'
 import SpringBox from './SpringBox'
 import BasicsOfMotion from './BasicsOfMotion'
 import Guestures from './Guestures'
+import AnimationControls from './AnimationControls'
 
 function App() {
   
@@ -12,7 +13,8 @@ function App() {
     <div className='flex items-center justify-center h-screen'>
       {/* <SpringBox /> */}
       {/* <BasicsOfMotion /> */}
-      <Guestures />
+      {/* <Guestures /> */}
+      <AnimationControls />
     </div>
   )
 }
